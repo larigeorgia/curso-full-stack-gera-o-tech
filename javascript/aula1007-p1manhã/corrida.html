@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let carros = [
+            {nome: "uno com escada em cima", velocidade: 28, distancia: 0},
+            {nome: "relampago marquinhos", velocidade: 5, distancia: 0},
+            {nome: "carro do danone", velocidade: 28, distancia: 0}
+        ];
+        function start(){
+
+            let vencedor;
+
+            for(let index=0;index<carros.length;index++){
+                let carro = carros[index];
+                carro.distancia += carro.velocidade;
+                if(!vencedor && carro.distancia>=200){
+                    vencedor = carro.nome;
+                    // break;
+                }
+            }
+
+            if(vencedor) {
+                clearInterval(intervalo)
+                console.log("Carro "+vencedor+" ganhou")
+            }
+        }
+        var intervalo = setInterval(start, 2000)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

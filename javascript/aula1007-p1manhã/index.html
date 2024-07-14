@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // alert ("um")
+        // setTimeout(função, tempoEmMilisegundos);
+
+        //Para parar o setTimeout ele precisa ser declarado dentro de uma variável. 
+        //Depois aplicar o clearTimeout(com a variável)
+
+        // setTimeout(function(){
+        //     // alert("dentro da function com pausa de tempo")
+        //     // document.body.textContent = "conteúdo do body"
+        // },1000);
+
+        // document.body.textContent = "conteúdo do body"
+        // alert("depois da function")
+        let numero = 1;
+        let setInterval = (function(){
+            console.log(numero++)
+        },2000)
+
+        setTimeout(function(){
+            clearTimeout(setInterval)
+        },10000)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

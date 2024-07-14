@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script>
+        // 1 - Criar variáveis que guarda e-mail e senha do usuário "salvo no banco"
+        // 2 - Criar variável que guarda o e-mail e senha que o usuário tentou usar para fazer login
+        // 3 - Usar estrutura de decisão lógica para exibir a mensagem "usuário logado" ou "usuário não logado"
+
+        let emailUser = "lari";
+        let senhaUser = 12345;
+        let email = prompt("Digite o email: ");
+        let senha= prompt("Digite a senha: ");
+        let controle;
+
+        // if (email!= emailUser && senha != senhaUser){
+        //     while(){
+        //         alert("Tente novamente")
+        //         let email = prompt("Digite o email: ");
+        //         let senha= prompt("Digite a senha: ");
+        //         controle += 1;
+        // }}else{
+        //     alert("Usuário logado")
+        // }
+
+
+
+
+        if (email == emailUser){
+            let senha = prompt("Digite a senha: ");
+        }if(senha != senhaUser){
+            alert("Senha incorreta");
+            for (controle=1;senha == senhaUser; controle++){
+                let senha = prompt("Digite a senha: ");
+            }
+            alert("Usuário bloqueado");
+        }if (email == emailUser && senha == senhaUser){
+            alert("Usuário logado")
+        }else{
+            for (controle=1;controle<=3; controle++){
+                alert("Tente novamente")
+                let email = prompt("Digite o email: ");
+                let senha= prompt("Digite a senha: ");
+            }
+        }
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
