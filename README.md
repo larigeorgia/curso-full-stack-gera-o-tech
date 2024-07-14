@@ -1,1 +1,1 @@
-# curso-full-stack-gera-o-tech
+# curso-full-stack-geracao-tech
