@@ -16,15 +16,17 @@
 
 import './App.css'
 import Navbar from './components/menu/NavBar';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Produtos from './pages/Produtos';
 import Contato from './pages/Contato';
 
 
+
 function App() {
   return (
-    <Router>
+    <>
+      <Router>
       <div className="App">
         <Navbar />
         <div className="content">
@@ -36,6 +38,8 @@ function App() {
         </div>
       </div>
     </Router>
+
+    </>
   );
 }
 
